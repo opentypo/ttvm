@@ -21,7 +21,7 @@ jobs:
     - name: Install LLVM and Clang
       uses: KyleMayes/install-llvm-action@master
       with:
-        version: 3.6.2
+        version: 14.0.0
     
     - name: Install GoogleTest
       uses: MarkusJx/googletest-installer@master
