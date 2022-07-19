@@ -6,12 +6,12 @@ project(TTVM
     LANGUAGES CXX
 )
 
+enable_testing()
+
 find_package(Threads REQUIRED)
 find_package(GTest REQUIRED)
 
+include(GoogleTest)
+
 add_subdirectory(lib)
 add_subdirectory(unittests)
-
-enable_testing()
-
-add_test(ttvm-platform-tests unittests/Platform/ttvm-platform-tests)
